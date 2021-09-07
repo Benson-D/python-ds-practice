@@ -12,9 +12,11 @@ def multiple_letter_count(phrase):
     # dictionary[letter] = (dictionary.get(letter) or 0) + 1
     # return dictionary
 
+    # get has a default method when looking for values 
+
     frequency_counter = {}
     for character in phrase: 
-        frequency_counter[character] = (frequency_counter.get(character) or 0) + 1
+        frequency_counter[character] = frequency_counter.get(character, 0) + 1
     
     return frequency_counter
 

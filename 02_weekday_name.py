@@ -1,4 +1,4 @@
-weekdays = {
+WEEK_DAYS = {
     1: 'Sunday',
     2: 'Monday',
     3: 'Tuesday',
@@ -25,7 +25,7 @@ def weekday_name(day_of_week):
         >>> weekday_name(0)
     """
     if day_of_week < 1 or day_of_week > 7:
-        return 
+        return None 
     else:
-        return weekdays[day_of_week]
+        return WEEK_DAYS[day_of_week]
     

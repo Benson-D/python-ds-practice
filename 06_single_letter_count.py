@@ -23,5 +23,7 @@ def single_letter_count(word, letter):
     # for letter in word if l == letter count = count + 1
     # strings have a built 
 
+    #use count operator 
+
     count = [character for character in word.lower() if character == letter]
     return len(count)

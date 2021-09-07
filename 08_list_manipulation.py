@@ -57,21 +57,27 @@ def list_manipulation(lst, command, location, value=None):
     # >>> list_manipulation(lst, 'add', 'end', 30)
     #[20, 1, 2, 3, 30]
 
-    if command not in ['add','remove']:
-        return 
-    if location not in ['beginning','end']:
-        return 
+    # if command not in ['add','remove']:
+    #     return 
+    # if location not in ['beginning','end']:
+    #     return 
+
+    # give breathing room when longer logical operators, data structure of O
     
+
     if command == 'add':
         if location == 'beginning': 
             lst.insert(0, value)
             return lst
+
         elif location == 'end':
             lst.append(value)
             return lst
+
     elif command == 'remove':
         if location == 'beginning': 
             return lst.pop(0)
+
         elif location == 'end':
             return lst.pop(-1)
 
